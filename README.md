@@ -20,3 +20,18 @@
 Токен для доступа к [API](https://weatherstack.com/) обязательно должен храниться в переменных окружения **env**.
 
 Создайте в проекте конфигурационный файл `config.js` и разместите в нём дефолтные значения всех переменных окружения, используемых при решении задачи. В поле для сдачи работы, помимо ссылки на ваш проект в Git, прикрепите файл `config.js`.  
+
+dotenv для работы с .env
+``
+npm i -D dotenv
+``
+
+в package.json
+"dev": "node -r dotenv/config index.js"
+
+eslint
+``
+npm install eslint --save-dev
+npx eslint --init
+
+``
